@@ -44,11 +44,11 @@ about:
   summary: 'Easy (non)linear optimization in Python with symbolically-defined objectives/constraints'
   description: |
     symopt makes it easy to define and solve (non)linear constrained optimization problems in Python.
-    It uses the power of SymPy (<https://www.sympy.org/>) to automate the error-prone and
-    time-consuming task of writing functions to evaluate an optimization problem's objective function and nonlinear
-    constraints (to say nothing of their first and second derivatives!). symopt then provides a standardized
+    It uses the power of SymPy to automate the error-prone and time-consuming task of writing
+    functions to evaluate an optimization problem's objective function and nonlinear constraints
+    (to say nothing of their first and second derivatives!). symopt then provides a standardized
     interface to solve the problem through nonlinear optimization backends including
-    SciPy (<https://www.scipy.org>) and Ipopt (<https://projects.coin-or.org/Ipopt>).
+    SciPy and Ipopt.
 extra:
   recipe-maintainers:
     - spcornelius
