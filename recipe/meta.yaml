@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install . --no-deps -vv
 
 requirements:
   build:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - sympy
     - scipy
@@ -33,6 +33,7 @@ test:
   requires:
     - pytest
     - {{ compiler('fortran') }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/spcornelius/{{ name }}
